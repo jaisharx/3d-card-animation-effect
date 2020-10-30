@@ -1,8 +1,23 @@
-import styles from "./style.module.scss";
+import { useState } from 'react';
+import styles from './style.module.scss';
 
 function Card() {
+    const [transformedStyle, setTransformedStyle] = useState('rotateY(0deg) rotateX(0deg)');
+
+    const handleMouseMove = (e) => {
+        let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+        let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+
+        // storing the cords as tranfroms
+        setTransformedStyle(`rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
+    };
+
     return (
-        <div className={styles.container}>
+        <div
+            className={styles.container}
+            onMouseMove={handleMouseMove}
+            style={{ transform: transformedStyle }}
+        >
             <div className={styles.card}>
                 <div className={styles.sneaker}>
                     <div className={styles.circle}></div>

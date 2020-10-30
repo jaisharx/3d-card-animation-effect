@@ -15,7 +15,7 @@
 }
 
 .sneaker {
-    min-height: 30vh;
+    min-height: 36vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,6 @@
 .info {
     h1 {
         font-size: 2.4rem;
-        padding-top: 1rem;
         transition: all 0.75s ease-out;
     }
 
@@ -59,6 +58,7 @@
     margin: 1rem 0;
 
     button {
+        margin: 0 2px;
         padding: 0.5rem 2rem;
         background: none;
         border: none;
@@ -67,10 +67,11 @@
         cursor: pointer;
         font-weight: bold;
         color: #585858;
-
-        &.active {
-            background: #585858;
+        transition: all .2s ease;
+        
+        &:hover {
             color: white;
+            background: #585858;
         }
     }
 }
@@ -88,5 +89,14 @@
         cursor: pointer;
         border-radius: 30px;
         font-weight: bolder;
+        border: 2px solid #fff;
+        transition: all .2s ease;
+    
+        &:hover {
+            background-color: #fff;
+            color: #f54642;
+            border: 2px solid #f54642;
+        }
+    
     }
 }
