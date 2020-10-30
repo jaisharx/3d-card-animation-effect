@@ -1,4 +1,5 @@
 import styles from './style.module.scss';
+import ProductLogo from './adidas.png';
 import { useState } from 'react';
 
 function Card() {
@@ -21,7 +22,7 @@ function Card() {
             <div className={styles.card}>
                 <div className={styles.sneaker}>
                     <div className={styles.circle}></div>
-                    <img src="/assets/adidas.png" alt="adidas" />
+                    <img src={ProductLogo} alt="adidas" />
                 </div>
                 <div className={styles.info}>
                     <h1>Adidas ZX</h1>
