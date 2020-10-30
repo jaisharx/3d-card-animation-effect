@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/3d-card-animation-effect/static/css/main.eebe1e01.chunk.css",
+    "main.js": "/3d-card-animation-effect/static/js/main.30882afd.chunk.js",
+    "main.js.map": "/3d-card-animation-effect/static/js/main.30882afd.chunk.js.map",
+    "runtime-main.js": "/3d-card-animation-effect/static/js/runtime-main.cad35d7a.js",
+    "runtime-main.js.map": "/3d-card-animation-effect/static/js/runtime-main.cad35d7a.js.map",
+    "static/js/2.aaebbff7.chunk.js": "/3d-card-animation-effect/static/js/2.aaebbff7.chunk.js",
+    "static/js/2.aaebbff7.chunk.js.map": "/3d-card-animation-effect/static/js/2.aaebbff7.chunk.js.map",
+    "static/js/3.c3aa3da4.chunk.js": "/3d-card-animation-effect/static/js/3.c3aa3da4.chunk.js",
+    "static/js/3.c3aa3da4.chunk.js.map": "/3d-card-animation-effect/static/js/3.c3aa3da4.chunk.js.map",
+    "index.html": "/3d-card-animation-effect/index.html",
+    "static/css/main.eebe1e01.chunk.css.map": "/3d-card-animation-effect/static/css/main.eebe1e01.chunk.css.map",
+    "static/js/2.aaebbff7.chunk.js.LICENSE.txt": "/3d-card-animation-effect/static/js/2.aaebbff7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cad35d7a.js",
+    "static/js/2.aaebbff7.chunk.js",
+    "static/css/main.eebe1e01.chunk.css",
+    "static/js/main.30882afd.chunk.js"
+  ]
+}
