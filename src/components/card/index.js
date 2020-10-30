@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import styles from './style.module.scss';
+import { useState } from 'react';
 
 function Card() {
     const [transformedStyle, setTransformedStyle] = useState('rotateY(0deg) rotateX(0deg)');
