@@ -4,6 +4,8 @@
 
 This repo is a simple showcase of 3D animations with some tranfroms and css effects. You can pretty much use this effect as an drag-ang-drop component.
 
+<hr/>
+
 There are three main things happening basically:
 
 1. When the user moves the mouse inside the container:
