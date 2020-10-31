@@ -2,25 +2,54 @@
 
 <img src="preview.png">
 
-In the project directory, you can run:
+This repo is a simple showcase of 3D animations with some tranfroms and css effects. You can pretty much use this effect as an drag-ang-drop component.
 
-### `npm start`
+There are three main things happening basically:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. When the user moves the mouse inside the container:
+```javascript
+const handleMouseMove = (e) => {
+        let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+        let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+        // setting state
+        setTransformedStyle(`rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
+    };
+```
+
+2. When the mouse enters the container:
+```javascript
+const handleMouseEnter = () => {
+        // using reacts refs
+        card.current.style.transition = 'none';
+        title.current.style.transform = 'translateZ(150px)';
+        sneaker.current.style.transform = 'translateZ(200px) rotateZ(-45deg)';
+        description.current.style.transform = 'translateZ(125px)';
+        sizes.current.style.transform = 'translateZ(100px)';
+        purchase.current.style.transform = 'translateZ(75px)';
+    };
+```
+
+3. When mouse leaves the container:
+```javascript
+const handleMouseLeave = (e) => {
+        // react refs
+        card.current.style.transition = 'all 0.5s ease';
+        card.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
+        title.current.style.transform = 'translateZ(0px)';
+        sneaker.current.style.transform = 'translateZ(0px) rotateZ(0deg)';
+        description.current.style.transform = 'translateZ(0px)';
+        sizes.current.style.transform = 'translateZ(0px)';
+        purchase.current.style.transform = 'translateZ(0px)';
+    };
+```
 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Package.json has 2 following scripts, choose whichever appropriate:
+```bash
+npm start 
+or
+npm build
+```
 
 ### **This project uses Create-React-App, [Click here](https://create-react-app.dev/) to learn more.**
